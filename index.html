@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>neatnet — mobile apps</title>
-<meta name="description" content="neatnet — independent mobile app studio by Piotr Pestka. Makers of Monoblast." />
+<meta name="description" content="neatnet — independent mobile app studio by Piotr Pestka. Makers of Monoblast and Fartknight." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -86,6 +86,7 @@
     gap: 3px; padding: 9px; background: #000; border: 1px solid #222;
   }
   .chip i { border-radius: 2px; background: #141414; }
+  .appicon { width: 58px; height: 58px; border-radius: 14px; flex: none; display: block; border: 1px solid #222; }
   .card h3 { margin: 0; font-size: 22px; letter-spacing: 0; font-weight: 700; }
   .card .tag { color: #9a9a9a; }
   .card p.desc { color: #c8c8c8; margin: 16px 0 22px; font-size: 14px; }
@@ -98,6 +99,10 @@
   .btn:hover { border-color: var(--bcol, var(--mb-cyan)); color: var(--bcol, var(--mb-cyan)); box-shadow: 0 0 16px -2px var(--bcol, var(--mb-cyan)); }
   .btn.solid { background: #fff; color: #000; border-color: #fff; }
   .btn.solid:hover { box-shadow: 0 0 22px -3px #fff; color: #000; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px; padding: 10px 17px; border-radius: 999px;
+    border: 1px dashed #2e2e2e; color: #9a9a9a; font-size: 13px; letter-spacing: .3px; cursor: default;
+  }
 
   /* ── connect grid (light, neatnet.tech style) ── */
   .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
@@ -155,6 +160,22 @@
         <a class="btn solid" href="https://apps.apple.com/ch/app/monoblast/id6776011658" target="_blank" rel="noopener">Download on the App Store</a>
         <a class="btn" href="/monoblast/privacy" style="--bcol:#7D5FFF">Privacy</a>
         <a class="btn" href="/monoblast/support.html" style="--bcol:#34C759">Support</a>
+      </div>
+    </article>
+    <article class="card" style="margin-top:20px">
+      <div class="row">
+        <img class="appicon" src="fartknight-icon.png" alt="Fartknight app icon" width="58" height="58" />
+        <div>
+          <h3>Fartknight</h3>
+          <p class="tag" style="margin:6px 0 0">crew fart league · iOS</p>
+        </div>
+      </div>
+      <p class="desc">Record it, score it, rule the throne. Private crews rate your clips
+        while an on-device DSP + server scoring engine ranks the daily leaderboard.</p>
+      <div class="links">
+        <span class="badge">Coming soon to the App Store</span>
+        <a class="btn" href="https://neatnettech.github.io/fartknight/privacy.html" target="_blank" rel="noopener" style="--bcol:#C8FF2E">Privacy</a>
+        <a class="btn" href="https://neatnettech.github.io/fartknight/terms.html" target="_blank" rel="noopener" style="--bcol:#7CE0FF">Terms</a>
       </div>
     </article>
   </section>
